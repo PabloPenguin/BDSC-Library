@@ -1,0 +1,294 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #D3D3D3;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 80%;
+	margin: auto; /*Makes all my margins automatic*/
+	overflow: hidden; /*Makes it so that there is no scrollbar on my container*/
+}
+
+header {
+	background: #ffffff;
+	color: #ffffff;
+	min-height: 70px;
+	border-bottom: #B3E3EF 3px solid;
+}
+
+header a{
+	color: #680031;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 105%;
+}
+
+header ul {
+	margin: 0;
+	padding: 0;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+	margin-top: 35px;
+}
+
+header #title {
+	float: left;
+}
+
+header img {
+	width: 100%;
+	height: 100%;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .current a {
+	color: #B3E3EF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+header a:hover {
+	color: #686464;
+	font-weight: bold;
+	text-transform: underline;
+}
+
+/*Hamburger button*/
+
+.open-slide, #side-menu {
+	display: none;
+}
+
+
+/*End of hamburger button*/
+
+
+
+#showcase_library {
+	min-height: 400px;
+	background:url('../images/library.png') no-repeat;
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase_library h1 {
+		margin-top: 150px;
+		font-size: 55px;
+		margin-bottom: 10px;
+}
+
+#showcase_library p {
+	font-size: 20px;
+}
+
+#subscription {
+	border-top: #B3E3EF 3px solid;
+	padding: 15px;
+	color: #ffffff;
+    background: #680031; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#402234, #331B2A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#402234, #331B2A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#402234, #331B2A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#402234, #331B2A); /* Standard syntax */
+}
+
+#subscription h1 {
+		float: left;
+}
+
+#subscription form {
+	float: right;
+	margin-top: 18px;
+}
+
+#subscription input {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+
+.button_1 {
+	height: 37px;
+	background: #72B1C1;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+/*Columns*/
+
+#columns {
+	margin-top: 20px;
+}
+
+#columns .box {
+	float: left;
+	text-align: center;
+	width: 31%;
+	padding: 10px;
+}
+
+#columns .box img {
+	width: 90px;
+}
+
+/*Sidebar*/
+
+aside#sidebar {
+	float: right;
+	width: 25%;
+	margin-top: 10px;
+}
+
+#dark_background {
+	padding: 15px;
+	background: #477C89;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*Main column*/
+article#main_content {
+	float: left;
+	width: 65%;
+}
+
+footer {
+	padding: 22px;
+	margin-top: 20px;
+	color: #ffffff;
+    background: #680031; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#402234, #331B2A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#402234, #331B2A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#402234, #331B2A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#402234, #331B2A); /* Standard syntax */
+	text-align: center;
+}
+
+/*stupid logo*/
+
+
+@media (max-width: 994px) {
+	header#title, 
+	header nav, 
+	header nav li,
+	#subscription h1,
+	#subscription form,
+	#columns .box,
+	article#main_content,
+	aside#sidebar{
+		float: none;
+		margin: auto;
+		text-align: center;
+		width: 100%;
+	}
+
+
+	#showcase_library h1 {
+		margin-top: 40px;
+	}
+	
+	#subscription button {
+		display: block;
+		width: 100%;
+	}
+	
+	#subscription form input {
+		width: 100%;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	
+	header#title, 
+	header nav, 
+	header nav li,
+	header nav li a {
+		display: block;
+		padding: 0;
+		margin-top: 15px;
+	}
+	
+	header nav li,
+	header nav li a {
+		display: none;
+		margin: 0;
+	}
+	
+	header img,
+	#title {
+		display: block;
+		float: left;
+		width: 60%;
+		min-width: 179.19px;
+		padding-top: 5px;
+	}
+	
+	nav .open-slide, #side-menu {
+		display: inline;
+		float: right;
+		padding-top: 5px;
+	}
+	
+	
+	.side-nav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		opacity: 0.9;
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
+	}
+
+	.side-nav a {
+		padding: 10px 10px 10px 30px;
+		text-decoration: none;
+		font-size: 22px;
+		color: #ccc;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.side-nav a:hover {
+		color: #fff;
+}
+
+	.side-nav .btn-close {
+		position: absolute;
+		top: 0;
+		right: 22px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+}
+
+
+@media (max-width: 500px) {
+	body {
+	 min-width: 350px;
+	}
+	.open-slide, #side-menu {
+		padding: 0;
+	}
+}
